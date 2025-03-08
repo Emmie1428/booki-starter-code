@@ -58,6 +58,16 @@ a {
     color: var(--main-bg-color)
 }
 
+h1 {
+    font-size: 22px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
 /*********Header**********/
 nav {
     display: flex;
@@ -67,15 +77,82 @@ nav {
 }
 
 img#logo {
-    padding-top: 30px;
+    padding: 30px 50px 30px 0px;
+    width: 61.09px;
+    height: 19px;
 }
 
 ul.menu {
-    padding: 0px 50px;
+    padding-left: 50px;
     display: flex;
     justify-content: space-between;
     width: 244px;
 }
+
+.èr-nav:èr{
+    border-top: 2px solid #0065FC;
+}
+
+.filtres {
+    height: 50px;
+    width: 758px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filtres ul {
+    display: flex;
+    gap: 10px;
+}
+
+.filtres li {
+    font-size: 17px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 0px 19px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.filtres li:èr{
+    background-color: #deebff;
+}
+
+.filtres i {
+    height: 22px;
+    width: 22px;
+    margin-right: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.info-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1340px;
+    height: 24px;
+    padding-bottom: 35px;
+}
+
+i.fa-solid.fa-info {
+    height: 22px;
+    width: 22px;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10.5px;
+    margin-right: 10px;
+}
+
+form, .filtres, .info-message {
+    padding-top: 35px;
+} 
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -146,13 +223,36 @@ ul.menu {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/*Desktop */
+
+body {
+    max-width:1440px;
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    li{
+        font-size: 16px;
+    }
+
+    .filtres{
+        flex-wrap: wrap;
+        max-width: 668px;
+        max-height: 91px;
+    }
+
+    .filtres ul{
+        padding-left: 0;
+        margin: 0;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    .hebergements, nav {
         width: 100%;
     }
 
