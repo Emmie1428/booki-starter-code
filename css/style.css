@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -233,14 +234,19 @@ body {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+
+    .filtres h3{
+        margin:0;
+    }
+
     li{
         font-size: 16px;
     }
 
     .filtres{
         flex-wrap: wrap;
-        max-width: 668px;
-        max-height: 91px;
+        width: 668px;
+        height: 91px;
     }
 
     .filtres ul{
@@ -252,7 +258,7 @@ body {
         flex-direction: column;
     }
 
-    .hebergements, nav {
+    .hebergements, header {
         width: 100%;
     }
 
