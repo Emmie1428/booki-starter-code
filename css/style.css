@@ -18,7 +18,9 @@ body {
     flex-direction: column; 
     align-items: center; 
     margin: 0; 
-    padding: 0; }
+    padding: 0; 
+    width: 1440px;
+}
 
 .main-container {
     width: 100%;
@@ -234,7 +236,6 @@ li#pepite {
     align-items: center;
     width: 1340px;
     height: 24px;
-    padding-bottom: 35px;
 }
 
 i.fa-solid.fa-info {
@@ -257,6 +258,8 @@ i.fa-solid.fa-info {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    width: 1340px;
+    height: 614px;
 }
 
 .hebergements-and-populaires section {
@@ -270,9 +273,24 @@ i.fa-solid.fa-info {
 .hebergements {
     width: 65%;
 }
+
+.hebergements-title h2{
+    font-size:22px;
+    margin-top: 0;
+}
+
 .hebergements-cards {
-    width: 250.33px;
-    height: 207.25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0 30px 0;
+}
+
+.hebergements-cards .card {
+    width: 240.33px;
+    height: 197.25px;
 }
 
 .hebergements-cards img {
@@ -281,8 +299,6 @@ i.fa-solid.fa-info {
     border: 5px solid #FFFFFF;
     border-bottom: none;
     height: 114px;
-    padding-left: 0;
-    margin: 0;
     position: relative;
     left: -5px;
     top: -5px;
@@ -306,6 +322,11 @@ i.fa-solid.fa-info {
 
 .hebergements-cards .card-rating  {
     margin-bottom: 5px;
+}
+
+h3.hebergement-CTA {
+    font-size: 18px;
+    margin: 0;
 }
 
 /****** Populaires ***********/
@@ -353,8 +374,43 @@ i.fa-solid.fa-info {
     margin-bottom: 5px;
 }
 
+/******Activités**********/
 
+.activites {
+    margin: 35px 0 35px 0;
+    padding: 30px;
+}
 
+.activites h2 {
+    margin-bottom: 30px;
+}
+
+.activites-cards .card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 439px;
+    padding: 0;
+    width: 297.5px;
+}
+
+.activites-cards img {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.activites-cards .card-title {
+    margin: 20px 19px 20px 19px;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
