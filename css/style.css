@@ -19,12 +19,11 @@ body {
     align-items: center; 
     margin: 0; 
     padding: 0; 
-    width: 1440px;
+    max-width: 1440px;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
@@ -83,7 +82,6 @@ ul {
 
 header { 
     width: 100%; 
-    max-width: 1440px; 
     padding: 0 50px; 
     box-sizing: border-box;
  }
@@ -110,6 +108,8 @@ img#logo {
 
 .hover-nav:hover{
     border-top: 2px solid #0065FC;
+    color:#0065FC;
+    padding-top:28px;
 }
 
 /*******Info groupe*********/
@@ -234,7 +234,6 @@ li#pepite {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 1340px;
     height: 24px;
 }
 
@@ -289,7 +288,7 @@ i.fa-solid.fa-info {
 }
 
 .hebergements-cards .card {
-    width: 240.33px;
+    width: 232px;
     height: 197.25px;
 }
 
@@ -412,6 +411,35 @@ h3.hebergement-CTA {
     gap: 30px;
 }
 
+
+/*****footer*********/
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 1340px;
+    height: 163px;
+}
+
+.list-footer {
+    width: 446.67px;
+    margin-left: 20px;
+}
+
+.list-footer h3 {
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+.list-footer ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.list-footer li {
+    margin: 15px 0;
+}
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -419,6 +447,11 @@ h3.hebergement-CTA {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    body{
+        max-width: 1024px;
+    }
+
     .filtres h3{
         padding-right: 615px;
         margin: 0;
@@ -461,10 +494,17 @@ h3.hebergement-CTA {
     
     .hebergements-and-populaires {
         flex-direction: column;
+        width: 924px;
+        height :913.5px;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards .card {
+        width: 258px;
+
     }
 
     .populaires {
@@ -476,6 +516,7 @@ h3.hebergement-CTA {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 842px;
     }
 
     .populaires-cards a {
@@ -484,10 +525,20 @@ h3.hebergement-CTA {
 
     .populaires-cards .card-title {
         font-size: 14px;
+        margin-bottom:20px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .populaires-cards .card {
+        width: 264.67px;
+    }
+
+    .populaires-cards img{
+        height:146px;
+        width: 35.5%;
     }
 }
 
