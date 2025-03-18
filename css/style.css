@@ -261,7 +261,6 @@ i.fa-solid.fa-info {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 614px;
 }
 
 .hebergements, .populaires{
@@ -274,6 +273,7 @@ i.fa-solid.fa-info {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    
 }
 
 .hebergements-title h2{
@@ -287,7 +287,7 @@ i.fa-solid.fa-info {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
 }
 
 .hebergements-cards .card {
@@ -306,7 +306,7 @@ i.fa-solid.fa-info {
     padding: 0 15px 0 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-sizing: border-box;
     gap: 8px;
     height: 64.25px;
@@ -330,6 +330,7 @@ h3.hebergement-CTA {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    height: fit-content;
 }
 
 .populaires-title {
@@ -401,17 +402,19 @@ h3.hebergement-CTA {
     height: 380px;
     width: 100%;
     border-radius: 20px 20px 0 0;
-    padding: 0;
 }
 
 .activites-cards .card-content{
     display: flex;
     align-items: center;
 }
+
 .activites .card-title {
     padding: 20px 19px;
     display: flex;
     margin: 0;
+    position: relative;
+    top: -5px;
 }
 
 
@@ -425,14 +428,15 @@ footer {
 }
 
 .list-footer {
-    width: 406.67px;
+    width: 100%;
     margin: 20px 20px;
 }
 
 .list-footer h3 {
     font-size: 18px;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
+
 
 .list-footer ul {
     display: flex;
@@ -501,17 +505,10 @@ footer {
     
     .hebergements-and-populaires {
         flex-direction: column;
-        width: 100%;
-        height: auto;
     }
 
     .hebergements {
         width: 100%;
-    }
-
-    .hebergements-cards .card {
-        width: 258px;
-
     }
 
     .populaires {
@@ -555,11 +552,6 @@ footer {
 
     .activites-cards .card-content{
         height: 60px;
-    }
-
-    footer{
-        width:100%;
-        height: 163px;
     }
 
     .list-footer {
@@ -766,7 +758,7 @@ footer {
         width: 100%;
         height: 200px;
     }
-
+     
     .activites-cards img {
         height: 141px;
     }
@@ -775,8 +767,9 @@ footer {
         height: 49px;
     }
 
-    .card-title .activites h3{
+    .activites .card-title{
         margin:0;
+        position: static;
     }
 
     footer {
