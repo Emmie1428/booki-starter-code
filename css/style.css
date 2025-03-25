@@ -420,7 +420,7 @@ footer {
 
 .liste-footer {
     width: 100%;
-    margin: 20px;
+    margin: 20px ;
 }
 
 .liste-footer h3 {
@@ -595,6 +595,7 @@ footer {
     
     .info-groupe {
         padding: 0 20px;
+        width: auto;
     }
 
     .recherche-localisation {
